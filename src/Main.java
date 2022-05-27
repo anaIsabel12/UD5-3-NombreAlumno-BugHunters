@@ -58,6 +58,7 @@ public class Main {
                     break;
                 case "Q":
                     salir = true;
+                    break;
             }
         }
     }
