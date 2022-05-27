@@ -21,10 +21,6 @@ public class Biblioteca {
 
         int contador = 0;
 
-        while(it.next(boolean)) {
-            System.out.println(contador + " --> " + it.hasNext());
-            contador--;
-        }
     }
 
     public String prestarLibro(int posicion) {
