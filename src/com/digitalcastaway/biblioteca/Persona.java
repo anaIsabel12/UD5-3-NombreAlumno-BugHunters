@@ -26,13 +26,13 @@ public class Persona extends Usuario {
 
     @Override
     public void devolverLibro(String titulo, Biblioteca biblioteca) {
-        biblioteca.devolverLibro(obtenerTituloLibro(0);
+        biblioteca.devolverLibro(obtenerTituloLibro(0));
 
         biblioteca.devolverLibro(librosPrestados.remove(String));
     }
 
-    public String obtenerTituloLibro(int posicion) {
-        return librosPrestados.get(posicion);
+    public boolean obtenerTituloLibro(int posicion) {
+        return obtenerTituloLibro(posicion);
     }
 
     @Override
