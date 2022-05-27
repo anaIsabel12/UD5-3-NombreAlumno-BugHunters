@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Persona implements Usuario {
     private String nombre;
     private ArrayList<String> librosPrestados;
+    public String biblioteca;
 
     public Persona(String nombre) {
         this.nombre = nombre;
