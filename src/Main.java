@@ -53,7 +53,7 @@ public class Main {
                     System.out.println("Introduzca el título del libro que quiere devolver");
                     System.out.println(usuario);
                     int libroParaDevolver = sc.nextInt();
-                    String tituloLibro = usuario.obtenerTituloLibro(libroParaDevolver);
+                    boolean tituloLibro = usuario.obtenerTituloLibro(libroParaDevolver);
                     usuario.devolverLibro(tituloLibro, biblio);
                     break;
                 case "Q":

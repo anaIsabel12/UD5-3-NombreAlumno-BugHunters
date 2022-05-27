@@ -25,7 +25,7 @@ public class Persona extends Usuario {
     }
 
     @Override
-    public void devolverLibro(String titulo, Biblioteca biblioteca) {
+    public void devolverLibro(boolean titulo, Biblioteca biblioteca) {
         biblioteca.devolverLibro(obtenerTituloLibro(0));
 
         biblioteca.devolverLibro(librosPrestados.remove(String));
