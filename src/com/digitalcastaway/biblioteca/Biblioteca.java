@@ -32,7 +32,7 @@ public class Biblioteca {
         return prestarLibro(posicionAleatoria);
     }
 
-    public void devolverLibro(String titulo) {
+    public void devolverLibro(boolean titulo) {
         catalogoLibros.add(titulo);
     }
 }

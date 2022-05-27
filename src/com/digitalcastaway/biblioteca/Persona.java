@@ -6,6 +6,7 @@ public class Persona extends Usuario {
     private String nombre;
     private ArrayList<String> librosPrestados;
     public String biblioteca;
+    private Object String;
 
     public Persona(String nombre) {
         this.nombre = nombre;
@@ -25,11 +26,9 @@ public class Persona extends Usuario {
 
     @Override
     public void devolverLibro(String titulo, Biblioteca biblioteca) {
-        biblioteca.devolverLibro(titulo);
+        biblioteca.devolverLibro(obtenerTituloLibro(0);
 
-        int posicion = librosPrestados.indexOf(titulo);
-
-        biblioteca.devolverLibro(librosPrestados.remove(posicion));
+        biblioteca.devolverLibro(librosPrestados.remove(String));
     }
 
     public String obtenerTituloLibro(int posicion) {
