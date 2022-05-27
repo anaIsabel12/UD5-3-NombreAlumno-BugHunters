@@ -4,18 +4,18 @@ import java.util.ArrayList;
 
 public class Persona extends Usuario {
     private String nombre;
-    private ArrayList<String> librosPrestados;
+    private ArrayList<Boolean> librosPrestados;
     public String biblioteca;
     private Object String;
 
     public Persona(String nombre) {
         this.nombre = nombre;
-        this.librosPrestados = new ArrayList<String>();
+        this.librosPrestados = new ArrayList<Boolean>();
     }
 
     @Override
     public void obtenerLibro(int posicion, Biblioteca biblioteca) {
-        String titulo = biblioteca.prestarLibro(posicion);
+        Boolean titulo = biblioteca.prestarLibro(posicion);
         librosPrestados.add(titulo);
     }
 
@@ -41,7 +41,7 @@ public class Persona extends Usuario {
                 " tiene los siguientes libros de la biblioteca: \n";
 
         int contador = 0;
-        for (String titulo : librosPrestados) {
+        for (Boolean titulo : librosPrestados) {
             output += contador + " --> " + titulo + "\n";
             contador++;
         }

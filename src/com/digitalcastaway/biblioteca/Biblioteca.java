@@ -6,15 +6,15 @@ import java.util.Iterator;
 
 public class Biblioteca {
     private String name;
-    private ArrayList<String> catalogoLibros;
+    private ArrayList<Boolean> catalogoLibros;
 
     public Biblioteca(String name) {
         this.name = name;
-        this.catalogoLibros = new ArrayList<String>(Arrays.stream(Catalogo.libros).toList());
+        this.catalogoLibros = new ArrayList<Boolean>(Arrays.stream(Catalogo.libros).toList());
     }
 
     public void showCatalog() {
-        Iterator<String> it = catalogoLibros.iterator();
+        Iterator<Boolean> it = catalogoLibros.iterator();
         System.out.println("################################");
         System.out.println("# Mostrando catálogo de libros #");
         System.out.println("################################");
@@ -23,11 +23,11 @@ public class Biblioteca {
 
     }
 
-    public String prestarLibro(int posicion) {
+    public Boolean prestarLibro(int posicion) {
         return catalogoLibros.remove(posicion);
     }
 
-    public String prestarLibroAleatorio() {
+    public Boolean prestarLibroAleatorio() {
         int posicionAleatoria = (int) (Math.random() * this.catalogoLibros.size());
         return prestarLibro(posicionAleatoria);
     }
