@@ -41,7 +41,7 @@ public class Persona extends Usuario {
                 " tiene los siguientes libros de la biblioteca: \n";
 
         int contador = 0;
-        for (Boolean titulo : librosPrestados) {
+        for (Boolean titulo: librosPrestados) {
             output += contador + " --> " + titulo + "\n";
             contador++;
         }
