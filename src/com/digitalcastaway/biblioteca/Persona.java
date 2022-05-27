@@ -24,13 +24,6 @@ public class Persona implements Usuario {
     }
 
     @Override
-    public String obtenerLibroAleatorio() {
-        String titulo = biblioteca.prestarLibroAleatorio();
-        librosPrestados.add(titulo);
-        return titulo;
-    }
-
-    @Override
     public void devolverLibro(String titulo, Biblioteca biblioteca) {
         biblioteca.devolverLibro(titulo);
 
