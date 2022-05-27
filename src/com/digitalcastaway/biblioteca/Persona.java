@@ -2,7 +2,7 @@ package com.digitalcastaway.biblioteca;
 
 import java.util.ArrayList;
 
-public class Persona implements Usuario {
+public class Persona extends Usuario {
     private String nombre;
     private ArrayList<String> librosPrestados;
     public String biblioteca;
@@ -38,14 +38,13 @@ public class Persona implements Usuario {
 
     @Override
     public String toString() {
-        String output =  "Nombre='" + nombre + '\'' +
+        String output = "Nombre='" + nombre + '\'' +
                 " tiene los siguientes libros de la biblioteca: \n";
 
         int contador = 0;
-        for ( String titulo: librosPrestados) {
+        for (String titulo : librosPrestados) {
             output += contador + " --> " + titulo + "\n";
-            contador ++;
+            contador++;
         }
-
     }
 }
